@@ -37,9 +37,13 @@
       <img class="header__aroha-image" src="/images/1.jpg"
         alt='Cartoon of a smiling speech bubble with a pair of short legs and arms. The speech bubble is holding a sign with the word "AROHA".'>
     </article>
+    <p aria-readonly="true" style="opacity: 0; max-height: 0;">We're asking everyone to show manaaki, respect privacy,
+      argue ideas not people, and to leave the swear words out. It's okay to be passionate online, but put your best
+      foot forward by showing netiquette to others.</p>
     <img class="header__netiquette-image" src="/images/2.jpg"
       alt="A smiling speech bubble, sitting in a relaxed manner, invites users to participate in online conversations in a respectful and constructive manner, avoiding offensive language and respecting the privacy of others">
   </header>
+
   <main class="main">
     <section>
       <header>
@@ -50,134 +54,170 @@
             alt='A blue speech bubble saying "Be nice" and a purple speech bubble saying "Respect" with the word "Netiquette" written below. There are arrows pointing left and right.'>
         </picture>
       </header>
-      <main class="accordion">
+      <main class="accordion" aria-label="Netiquette guidelines">
         <ul class="accordion__list">
           <li>
             <article class="accordion__item">
-              <h2 class="accordion__title"><span>Would you say that in person?</span>
+              <button aria-expanded="false" aria-controls="content-1" class="accordion__title" tabindex="0"><span>Would
+                  you say that in
+                  person?</span>
                 <div>
-                  <img class="accordion__icon accordion__icon--plus" src="/images/plus.svg" alt="Expand" />
-                  <img class="accordion__icon accordion__icon--minus" src="/images/minus.svg" alt="Contract" />
+                  <img aria-hidden="true" class="accordion__icon accordion__icon--plus" src="/images/plus.svg"
+                    alt="Expand" />
+                  <img aria-hidden="true" class="accordion__icon accordion__icon--minus" src="/images/minus.svg"
+                    alt="Contract" />
                 </div>
-              </h2>
-              <div class="accordion__content">
+              </button>
+              <div class="accordion__content" id="content-1">
                 <p>Is this something you'd say in a face-to-face conversation? Be mindful of your words.</p>
               </div>
             </article>
           </li>
           <li>
             <article class="accordion__item">
-              <h2 class="accordion__title">You have more in common than not
+              <button aria-expanded="false" aria-controls="content-2" class="accordion__title" tabindex="0"><span>You
+                  have more in common than
+                  not</span>
                 <div>
-                  <img class="accordion__icon accordion__icon--plus" src="/images/plus.svg" alt="Expand" />
-                  <img class="accordion__icon accordion__icon--minus" src="/images/minus.svg" alt="Contract" />
+                  <img aria-hidden="true" class="accordion__icon accordion__icon--plus" src="/images/plus.svg"
+                    alt="Expand" />
+                  <img aria-hidden="true" class="accordion__icon accordion__icon--minus" src="/images/minus.svg"
+                    alt="Contract" />
                 </div>
-              </h2>
-              <div class="accordion__content">
+              </button>
+              <div class="accordion__content" id="content-2">
                 <p>Try to see things from their perspective. You might be surprised at what you find.</p>
               </div>
             </article>
           </li>
           <li>
             <article class="accordion__item">
-              <h2 class="accordion__title"><span>Passionate, not personal</span>
+              <button aria-expanded="false" aria-controls="content-3" class="accordion__title"
+                tabindex="0"><span>Passionate, not personal</span>
                 <div>
-                  <img class="accordion__icon accordion__icon--plus" src="/images/plus.svg" alt="Expand" />
-                  <img class="accordion__icon accordion__icon--minus" src="/images/minus.svg" alt="Contract" />
+                  <img aria-hidden="true" class="accordion__icon accordion__icon--plus" src="/images/plus.svg"
+                    alt="Expand" />
+                  <img aria-hidden="true" class="accordion__icon accordion__icon--minus" src="/images/minus.svg"
+                    alt="Contract" />
                 </div>
-              </h2>
-              <div class="accordion__content">
+              </button>
+              <div class="accordion__content" id="content-3">
                 <p>It's okay to feel strongly about something, but be respectful of others' opinions.</p>
               </div>
             </article>
           </li>
           <li>
             <article class="accordion__item">
-              <h2 class="accordion__title"><span>Cool down before you fire up</span>
+              <button aria-expanded="false" aria-controls="content-4" class="accordion__title" tabindex="0"><span>Cool
+                  down before you fire
+                  up</span>
                 <div>
-                  <img class="accordion__icon accordion__icon--plus" src="/images/plus.svg" alt="Expand" />
-                  <img class="accordion__icon accordion__icon--minus" src="/images/minus.svg" alt="Contract" />
+                  <img aria-hidden="true" class="accordion__icon accordion__icon--plus" src="/images/plus.svg"
+                    alt="Expand" />
+                  <img aria-hidden="true" class="accordion__icon accordion__icon--minus" src="/images/minus.svg"
+                    alt="Contract" />
                 </div>
-              </h2>
-              <div class="accordion__content">
+              </button>
+              <div class="accordion__content" id="content-4">
                 <p>If you're feeling angry or upset, take a break before engaging in a conversation.</p>
               </div>
             </article>
           </li>
           <li>
             <article class="accordion__item">
-              <h2 class="accordion__title"><span>You can’t control or change people</span>
+              <button aria-expanded="false" aria-controls="content-5" class="accordion__title" tabindex="0"><span>You
+                  can’t control or change
+                  people</span>
                 <div>
-                  <img class="accordion__icon accordion__icon--plus" src="/images/plus.svg" alt="Expand" />
-                  <img class="accordion__icon accordion__icon--minus" src="/images/minus.svg" alt="Contract" />
+                  <img aria-hidden="true" class="accordion__icon accordion__icon--plus" src="/images/plus.svg"
+                    alt="Expand" />
+                  <img aria-hidden="true" class="accordion__icon accordion__icon--minus" src="/images/minus.svg"
+                    alt="Contract" />
                 </div>
-              </h2>
-              <div class="accordion__content">
+              </button>
+              <div class="accordion__content" id="content-5">
                 <p>Accept people for who they are. Trying to change them will only lead to frustration.</p>
               </div>
             </article>
           </li>
           <li>
             <article class="accordion__item">
-              <h2 class="accordion__title"><span>Words have power</span>
+              <button aria-expanded="false" aria-controls="content-6" class="accordion__title" tabindex="0"><span>Words
+                  have power</span>
                 <div>
-                  <img class="accordion__icon accordion__icon--plus" src="/images/plus.svg" alt="Expand" />
-                  <img class="accordion__icon accordion__icon--minus" src="/images/minus.svg" alt="Contract" />
+                  <img aria-hidden="true" class="accordion__icon accordion__icon--plus" src="/images/plus.svg"
+                    alt="Expand" />
+                  <img aria-hidden="true" class="accordion__icon accordion__icon--minus" src="/images/minus.svg"
+                    alt="Contract" />
                 </div>
-              </h2>
-              <div class="accordion__content">
+              </button>
+              <div class="accordion__content" id="content-6">
                 <p>Think about the impact your words might have on others before you post</p>
               </div>
             </article>
           </li>
           <li>
             <article class="accordion__item">
-              <h2 class="accordion__title"><span>Acknowledge people's feelings</span>
+              <button aria-expanded="false" aria-controls="content-7" class="accordion__title"
+                tabindex="0"><span>Acknowledge people's
+                  feelings</span>
                 <div>
-                  <img class="accordion__icon accordion__icon--plus" src="/images/plus.svg" alt="Expand" />
-                  <img class="accordion__icon accordion__icon--minus" src="/images/minus.svg" alt="Contract" />
+                  <img aria-hidden="true" class="accordion__icon accordion__icon--plus" src="/images/plus.svg"
+                    alt="Expand" />
+                  <img aria-hidden="true" class="accordion__icon accordion__icon--minus" src="/images/minus.svg"
+                    alt="Contract" />
                 </div>
-              </h2>
-              <div class="accordion__content">
+              </button>
+              <div class="accordion__content" id="content-7">
                 <p>Validate others' feelings. Even if you don't agree, let them know you hear them.</p>
               </div>
             </article>
           </li>
           <li>
             <article class="accordion__item">
-              <h2 class="accordion__title"><span>Compassion is cool</span>
+              <button aria-expanded="false" aria-controls="content-8" class="accordion__title"
+                tabindex="0"><span>Compassion is cool</span>
                 <div>
-                  <img class="accordion__icon accordion__icon--plus" src="/images/plus.svg" alt="Expand" />
-                  <img class="accordion__icon accordion__icon--minus" src="/images/minus.svg" alt="Contract" />
+                  <img aria-hidden="true" class="accordion__icon accordion__icon--plus" src="/images/plus.svg"
+                    alt="Expand" />
+                  <img aria-hidden="true" class="accordion__icon accordion__icon--minus" src="/images/minus.svg"
+                    alt="Contract" />
                 </div>
-              </h2>
-              <div class="accordion__content">
+              </button>
+              <div class="accordion__content" id="content-8">
                 <p>Be kind. A little compassion goes a long way.</p>
               </div>
             </article>
           </li>
           <li>
             <article class="accordion__item">
-              <h2 class="accordion__title"><span>Check your sources</span>
+              <button aria-expanded="false" aria-controls="content-9" class="accordion__title" tabindex="0"><span>Check
+                  your sources</span>
                 <div>
-                  <img class="accordion__icon accordion__icon--plus" src="/images/plus.svg" alt="Expand" />
-                  <img class="accordion__icon accordion__icon--minus" src="/images/minus.svg" alt="Contract" />
+                  <img aria-hidden="true" class="accordion__icon accordion__icon--plus" src="/images/plus.svg"
+                    alt="Expand" />
+                  <img aria-hidden="true" class="accordion__icon accordion__icon--minus" src="/images/minus.svg"
+                    alt="Contract" />
                 </div>
-              </h2>
-              <div class="accordion__content">
+              </button>
+              <div class="accordion__content" id="content-9">
                 <p>Verify information before sharing it. Fake news spreads quickly.</p>
               </div>
             </article>
           </li>
           <li>
             <article class="accordion__item">
-              <h2 class="accordion__title"><span>Responses when you don’t agree</span>
+              <button aria-expanded="false" aria-controls="content-10" class="accordion__title"
+                tabindex="0"><span>Responses when you don’t
+                  agree</span>
                 <div>
-                  <img class="accordion__icon accordion__icon--plus" src="/images/plus.svg" alt="Expand" />
-                  <img class="accordion__icon accordion__icon--minus" src="/images/minus.svg" alt="Contract" />
+                  <img aria-hidden="true" class="accordion__icon accordion__icon--plus" src="/images/plus.svg"
+                    alt="Expand" />
+                  <img aria-hidden="true" class="accordion__icon accordion__icon--minus" src="/images/minus.svg"
+                    alt="Contract" />
                 </div>
-              </h2>
-              <div class="accordion__content">
+              </button>
+              <div class="accordion__content" id="content-10">
                 <p>Find common ground. There's always something to agree on.</p>
               </div>
             </article>
@@ -284,9 +324,10 @@
       </article>
     </section>
   </main>
+
   <footer class="footer">
     <div class="footer__container">
-      <div class="footer__links">
+      <div class="footer__links" aria-label="Footer navigation">
         <a href="#">A CAMPAIGN BY:</a>
         <a href="#">NEW ZEALAND HUMAN</a>
         <a href="#">RIGHTS COMMISSION</a>

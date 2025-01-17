@@ -1,17 +1,13 @@
 @use "./reset.scss";
-@use "./variables.scss";
+@use "./variables.scss" as variables;
 
 .header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include variables.container-column();
   padding-top: 260px;
   background-color: variables.$color-header;
 
   &__title-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include variables.container-column();
     color: variables.$color-font;
     width: 100%;
     padding-left: 30px;
@@ -19,8 +15,7 @@
   }
 
   &__title {
-    font-size: 68px;
-    font-weight: 400;
+    @include variables.font(68px);
     text-align: center;
   }
 
@@ -49,8 +44,7 @@
 }
 
 .accordion {
-  display: flex;
-  justify-content: center;
+  @include variables.container();
   padding-top: 46px;
   padding-bottom: 100px;
 
@@ -67,15 +61,14 @@
   }
 
   &__title {
+    @include variables.container(space-between);
+    @include variables.font(36px);
     color: variables.$color-font;
+    background-color: variables.$color-background;
     width: 100%;
     padding: 20px 0;
     text-align: left;
-    font-size: 36px;
-    font-weight: 400;
     cursor: pointer;
-    display: flex;
-    justify-content: space-between;
     align-items: start;
 
     @media (min-width: 992px) {
@@ -112,24 +105,23 @@
       margin: 15px 0;
       font-size: 32px;
       line-height: 1.5;
+      color: variables.$color-font;
+    }
+  }
+
+  .active &__icon {
+    &--plus {
+      display: none;
+    }
+
+    &--minus {
+      display: block;
     }
   }
 }
 
-.active {
-  .accordion__icon--plus {
-    display: none;
-  }
-
-  .accordion__icon--minus {
-    display: block;
-  }
-}
-
 .banner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include variables.container-column();
   padding-bottom: 200px;
   padding-top: 200px;
 
@@ -142,9 +134,8 @@
   }
 
   &__title {
+    @include variables.font(42px);
     width: 100%;
-    font-size: 42px;
-    font-weight: 400;
     padding-bottom: 200px;
 
     @media (min-width: 992px) {
@@ -160,8 +151,7 @@
 }
 
 .article {
-  display: flex;
-  justify-content: center;
+  @include variables.container();
 
   &__container {
     width: 90%;
@@ -172,8 +162,7 @@
   }
 
   &__title {
-    font-size: 32px;
-    font-weight: 600;
+    @include variables.font(32px, 600);
     padding-bottom: 20px;
   }
 
@@ -197,27 +186,22 @@
   padding-top: 210px;
 
   &__container {
-    display: flex;
+    @include variables.container(end);
     flex-wrap: wrap;
-    justify-content: end;
     width: 92%;
 
     @media (min-width: 992px) {
-      justify-content: end;
       margin-bottom: 196px;
       width: 81.5%;
     }
   }
 
   &__links {
+    @include variables.container-column(start);
+    @include variables.font(12px, 500);
     width: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
     font-family: "Segoe UI";
-    font-size: 12px;
     letter-spacing: 2px;
-    font-weight: 500;
     margin-top: 40px;
 
     a {
